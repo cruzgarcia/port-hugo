@@ -18,8 +18,7 @@
       class="d-md-none"
       src="{{ .mobile_bg_image | relURL }}"
       alt="background"
-    />{{ else }} <img src="{{ .bg_image | relURL }}" alt="background" />{{ end
-    }}
+    />{{ else }} <img src="{{ .bg_image | relURL }}" alt="background" />{{ end }}
   </div>
   <div class="container">
     <div class="row content">
@@ -31,10 +30,9 @@
           <div class="animated-text">
             <strong class="cd-headline clip">
               <span class="cd-words-wrapper">
-                {{ range $index, $elements:= .occupations }} {{ if eq $index 0
-                }}
-                <b class="is-visible">{{ . }}</b>{{ else }}<b>{{ . }}</b>{{ end
-                }} {{ end }}
+                {{ range $index, $elements:= .occupations }} {{ if eq $index 0 }}
+                <b class="is-visible">{{ . }}</b>{{ else }}<b>{{ . }}</b>{{ end }} 
+                {{ end }}
               </span>
             </strong>
           </div>
